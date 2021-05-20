@@ -8,8 +8,6 @@
   align-items: center;
 }
 
-/* 여기서 min-height: 600px 는 먹고 height: 100% 는 안먹은 이유는? */
-
 .skill-item {
   display: flex;
   flex-direction: column;
