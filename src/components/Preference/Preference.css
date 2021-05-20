@@ -1,0 +1,17 @@
+.preference {
+  padding-bottom: 12rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.prefer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}

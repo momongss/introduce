@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "ie >= 8"
+      },
+      "react"
+    ]
+  ],
+  "plugins": [
+    [
+      "file-loader",
+      {
+        "name": "[hash].[ext]",
+        "extensions": ["png", "jpg", "jpeg", "gif", "svg"],
+        "publicPath": "/public",
+        "outputPath": "/public",
+        "context": "",
+        "limit": 0
+      }
+    ]
+  ]
+}

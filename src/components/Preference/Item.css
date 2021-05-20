@@ -1,0 +1,24 @@
+h3 {
+  all: unset;
+  font-weight: 700;
+  font-size: 3rem;
+
+  text-align: center;
+
+  margin-top: 3rem;
+}
+
+.prefer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.img {
+  width: 300px;
+  height: 200px;
+
+  object-fit: cover;
+}

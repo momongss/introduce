@@ -1,0 +1,61 @@
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.item-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+
+@media screen and (min-width: 375px) {
+  .item-content {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3rem;
+    align-items: center;
+    width: 400px;
+
+    padding: 0.5rem;
+  }
+
+  .item-content .sub-title {
+    width: 130px;
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    align-items: center;
+
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .item-content .sub-title {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.item-content .sub-title {
+  font-size: 1.5rem;
+  color: rgb(180, 180, 180);
+  padding-right: 1rem;
+  padding-left: 1rem;
+}

@@ -1,0 +1,94 @@
+:root {
+  --app-background-color: rgb(40, 44, 52);
+}
+
+.app {
+  background-color: var(--app-background-color);
+  color: white;
+
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+  min-width: 100%;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 980px) {
+  .app-header {
+    flex-direction: row;
+
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (min-width: 784px) and (max-width: 980px) {
+  .app-header {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media screen and (max-width: 784px) {
+  .app-header {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+}
+
+.main-contents {
+  margin-top: 30px;
+}
+
+.app-logo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.app-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90px;
+  height: 50px;
+
+  font-size: 20px;
+  font-weight: 500;
+
+  cursor: pointer;
+  border-radius: 15.5px;
+
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: rgb(28, 31, 39);
+}
+
+.nav-item.active {
+  background-color: rgba(124, 124, 223, 1);
+}
